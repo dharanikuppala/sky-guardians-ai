@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h2>{{ result }}</h2>
+    <p>Confidence: {{ confidence }}</p>
+
+    {% if image_path.endswith('.mp4') %}
+        <video width="600" controls>
+            <source src="{{ image_path }}" type="video/mp4">
+        </video>
+    {% else %}
+        <img src="{{ image_path }}" width="400">
+    {% endif %}
+
+    <br><br>
+    <a href="/">Go Back</a>
+</body>
+</html>

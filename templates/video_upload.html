@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Video</title>
+</head>
+<body>
+    <h2>Upload Video for Drone Detection</h2>
+    <form action="/process-video" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*" required>
+        <button type="submit">Upload & Process</button>
+    </form>
+    <br><br>
+    <a href="/">Go Back</a>
+</body>
+</html>
